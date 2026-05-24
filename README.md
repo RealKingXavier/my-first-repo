@@ -13,6 +13,6 @@ A simple starter project.
 python hello.py
 ```
 
-## Lisense
+## License
 
 MIT
