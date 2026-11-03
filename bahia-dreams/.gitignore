@@ -1,0 +1,12 @@
+node_modules
+.next
+.netlify
+.data
+.env*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# Owner fee guide stays out of git (public repo); deploys copy it from disk.
+private/*.pdf

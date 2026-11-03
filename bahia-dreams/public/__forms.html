@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Forms</title></head>
+<body>
+  <!-- Detected by Netlify Forms at deploy time. The site's API routes relay
+       already-validated submissions here so Netlify can email them.
+       Keep field names in sync with src/lib/notify.ts (formFieldName). -->
+  <form name="owner-lead" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="owner-lead" />
+    <input type="text" name="subject" />
+    <input type="text" name="reference" />
+    <input type="text" name="name" />
+    <input type="text" name="email" />
+    <input type="text" name="phone-whatsapp" />
+    <input type="text" name="preferred-contact" />
+    <input type="text" name="property-type" />
+    <input type="text" name="property-name" />
+    <input type="text" name="area" />
+    <input type="text" name="address" />
+    <input type="text" name="bedrooms-bathrooms-max-guests" />
+    <input type="text" name="already-listed" />
+    <input type="text" name="listing-links" />
+    <input type="text" name="status" />
+    <input type="text" name="amenities" />
+    <input type="text" name="looking-for" />
+    <input type="text" name="timeline" />
+    <textarea name="message"></textarea>
+    <input type="text" name="photos" />
+  </form>
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="subject" />
+    <input type="text" name="reference" />
+    <input type="text" name="name" />
+    <input type="text" name="email" />
+    <input type="text" name="topic" />
+    <input type="text" name="about" />
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>

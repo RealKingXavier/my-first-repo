@@ -1,0 +1,55 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# One canonical host: https://bahiadreamscr.com. The www host and the legacy
+# bahiadreamscostarica.com domain (both hosts) redirect here permanently,
+# keeping the path and query string. Netlify serves every alias over HTTPS.
+[[redirects]]
+  from = "https://www.bahiadreamscr.com/*"
+  to = "https://bahiadreamscr.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.bahiadreamscr.com/*"
+  to = "https://bahiadreamscr.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://bahiadreamscostarica.com/*"
+  to = "https://bahiadreamscr.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://bahiadreamscostarica.com/*"
+  to = "https://bahiadreamscr.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.bahiadreamscostarica.com/*"
+  to = "https://bahiadreamscr.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.bahiadreamscostarica.com/*"
+  to = "https://bahiadreamscr.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/brand/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
